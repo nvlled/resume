@@ -1,0 +1,251 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>Resume</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/resume.css">
+</head>
+<body>
+    <div id="header">
+        <h1 class="fullname">
+            Ronald Casili
+        </h1>
+    </div>
+    <div class="contact-info">
+        <div class="Address">
+
+        </div>
+        <div class="email">
+            nvlled@gmail.com
+        </div>
+        <div class="phone">
+            +639052182048
+        </div>
+        <div class="website">
+            https://github.com/nvlled
+        </div>
+    </div>
+    <div class="about">
+        <h2>About</h2>
+        <p>
+            I am hobbyist who has a wide range of interest, including math and programming.
+            I am not openly competitive, but for purposes of knowing my current edge and
+            limitations I do try to measure myself against other people who are in the same
+            competing space. I still have lots to learn, but I also actively don't try
+            beat myself too much up if I hardly make an inch towards my mutable goals.
+        </p>
+    </div>
+
+    <div class="skills">
+        <h2>Skills</h2>
+        <ul class="nested">
+            <li>
+                <strong>Basic System Administration/Maintenance</strong>
+                <ul>
+                    <li>Debian/Linux</li>
+                    <li>Tools/Utility scripts with bash, python and node</li>
+                    <li>Remote administration with SSH</li>
+                    <li>Version Control with Git</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Desktop Development</strong>
+                <ul>
+                    <li>Python3 with PyQt5 (cross-platform)</li>
+                    <li>Node with Electron (cross-platform)</li>
+                    <li>C#/VB.net with WinForms</li>
+                    <li>Java with Swing</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Web Development</strong>
+                <ul>
+                    <li>Node/Express</li>
+                    <li>PHP7 (plain or with laravel)</li>
+                    <li>Mono Asp.NET</li>
+                    <li>Go backend</li>
+                    <li>HTML5/ES5/CSS3</li>
+                    <li>jQuery or plain DOM API</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Others</strong>
+                <ul>
+                    <li>Basic 2D game developement</li>
+                    <li>Library Development</li>
+                    <li>Writing (Technical or Creative)</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="anti-skills">
+        <h3>Anti-Skills / Weaknesses</h3>
+        <ul class="nested">
+            <li>Code comments and documentation − I don't write comments for my own projects because I can perfectly read my own code just fine (yes, even after years), but if I am in a team, I'd strictly conform to any coding conventions imposed upon me.</li>
+            <li>Automated Code Testing − Write tests is my least favorite part of developement, but as I do write them as needed and if the requirements are no longer highly-variable and are well-defined.</li>
+        </ul>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="projects">
+        <h2>Recent Projects</h2>
+        <div>
+            <h3>Doctrac</h3>
+            <p>
+                A university document tracking system.
+                It remains to be seen what the future of this
+                project is since partly the stakeholders couldn't form
+                a definite consensus on the process, and partly because
+                I couldn't deliver on designated times.
+            </p>
+            <h4>Technologies</h4>
+            <ul>
+                <li><strong>PHP/laravel</strong> −
+                This is only the second time I've used laravel, the first one
+                was for a project assignment, so my code wasn't idiomatic
+                to the conventions used by the laravel developers. The major
+                pain point I experienced with laravel is the java-ish design
+                pattern coding conventions used. I personally find it needlessly
+                complicated, and more often than not it was tedious to adapt the
+                framework to my problem.
+                </li>
+                <li><strong>jQuery</strong> −
+                I'm actually more of a vanilla js guy who uses DOM API directly,
+                but I've used jQuery because the would-be maintainer is familiar with it.
+                For quick page interactivity, jQuery is a good tool, but for really
+                complex UI, it starts to devolve to spaghetti code.
+                </li>
+                <li><strong>domvmjs</strong> −
+                I rewrote a really complex and messy jQuery UI code in domvm,
+                which made the code simpler and maintainable.
+                There are lots of trending vdom libraries now
+                (such as react and vue) but I chose this one
+                since it's a small library with no dependencies.
+                </li>
+                <li><strong>Bootstrap 4</strong> −
+                I actually rewrote the site interface design twice before finally
+                succumbing to bootstrap. Interface and layout design is my weakness,
+                and it's hard to it right even with css grid and flexbox.
+                </li>
+            </ul>
+        </div>
+
+
+        <div>
+            <h3>Cbtest</h3>
+            <p>
+                A (web) computer-based test and exam for technical drafting.
+                Notable features include automatically grading drafts by
+                comparing images, and automated test score grading and compilation.
+            </p>
+            <h4>Technologies</h4>
+            <ul>
+                <li><strong>node/express</strong> −
+                I've used this for the backend, which is a standard
+                choice since express is a good enough for most backend stuffs.
+                I'd like to get a chance to develop SPA with react or vue
+                and see what the developer affordance and ergonomics they provide.
+                </li>
+                <li><strong>HTML5 with pug and CSS Grid/Flexbox</strong> −
+                I learned and tried using CSS grids since the client
+                had specific requests for layout design. I've managed
+                to fulfill the request, but working with CSS grid
+                was cumbersome since it behaves differently on browsers.
+                But it's possible that the
+                layout was really complex or that I haven't fully
+                learned how to utilize CSS grids properly.
+
+                <li><strong>Plain JS/ES5</strong> −
+                For the client scripts,
+                I don't need much page interactivity so I resorted to
+                just using plain DOM API and ES5 for optimal compatibility.
+                </li>
+                <li><strong>iSpring Suite 8</strong> −
+                This is a plugin for MS Powerpoint for creating
+                interactive test/exam materials. This is what the client
+                was already using, and I needed to implement automation
+                for the manual processes.
+                I needed to programmatically modify the code generated by ispring,
+                but it does not provide an SDK, so I just did a little reverse
+                engineering on the base64 blob embedded in the script.
+                </li>
+                <li><strong>Image Diff Library</strong> −
+                I forked and modified an image diffing library
+                so I could count the number
+                of pixel differences between two images.
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Trending scanpath analyzer</h3>
+            <p>
+                This is a work from a PhD student who
+                needed automation from the current manual
+                MS Excel computations. The problem domain
+                involves taking a group of files generated
+                by an eye-tracker device, and then
+                finding a trending scanpath from a group of
+                student participants. The full problem domain
+                is a bit out of my knowledge scope, but my
+                implementation have a formal document/specification
+                to refer to.
+            </p>
+            <h4>Technologies</h4>
+            <ul>
+                <li><strong>Python with PyQt5</strong> −
+                I don't have much exposure to python aside
+                from when I was learning to program, but
+                it's a nice language/tool that I definitely
+                use more in the future. I had a bit of trouble
+                setting up the python environment, but I managed
+                through with virtualenv, which works seamlessly
+                with windows and linux.
+                </li>
+                <li><strong>Qt5 with Qt Designer</strong> −
+                I don't have much luxury time learning another layout
+                system, so having WYSIWYG interface tool such as Qt Designer
+                is a big help.
+                </li>
+                <li><strong>Pyinstaller</strong> −
+                I used this to make standalone executable binaries.
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Dilim</h3>
+            <p>
+                Digital Library Management.
+                This is a work from my sister who is a highschool
+                teacher and is assigned on managing a library.
+                Her primary complaint is creating DDC call numbers
+                for the books.
+            </p>
+            <h4>Technologies</h4>
+            <ul>
+                <li><strong>Electron JS</strong> −
+                Electron is a nice technology in creating
+                cross-platform apps, but I sort of dislike
+                the bloated application size.
+                </li>
+                <li><strong>NPM Libraries</strong> −
+                I had to write two libraries for the generation
+                of DDC call numbers since there were none in
+                the npm, the one I could find was a windows GUI
+                app.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="education">
+        <h2>Education</h2>
+        <div>
+            Bachelor, Information Technology - University of Pangasinan Urdaneta 2018
+        </div>
+    </div>
+    <script src="js/resume.js"></script>
+</body>
+</html>
